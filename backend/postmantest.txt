@@ -1,0 +1,65 @@
+
+✅ 1. GET /api/showtimes — List All Records
+Method: GET
+
+URL: http://localhost:3000/api/showtimes
+
+Action: Click Send
+
+Show: JSON array of all showtimes
+
+✅ 2. GET /api/showtimes/:id — Get One Record
+Method: GET
+
+URL: http://localhost:3000/api/showtimes/1 (or any valid ID)
+
+Action: Click Send
+
+Show: JSON object of that movie
+
+✅ 3. POST /api/showtimes — Create a Record
+Method: POST
+
+URL: http://localhost:3000/api/showtimes
+
+Body: Go to Body → raw → JSON, paste:
+
+json
+{
+  "movie_title": "Inside Out 2",
+  "genre": "Animation",
+  "duration": "1h 50m",
+  "rating": "PG",
+  "theater": "CHM CINEMA"
+}
+Action: Click Send
+
+Show: JSON response with new id
+
+✅ 4. PUT /api/showtimes/:id — Update a Record
+Method: PUT
+
+URL: http://localhost:3000/api/showtimes/1
+
+Body: Go to Body → raw → JSON, paste:
+
+json
+{
+  "movie_title": "Inside Out 2 (Updated)",
+  "genre": "Animation",
+  "duration": "1h 55m",
+  "rating": "PG",
+  "theater": "CHM CINEMA"
+}
+Action: Click Send
+
+Show: JSON response confirming update
+
+✅ 5. DELETE /api/showtimes/:id — Delete a Record
+Method: DELETE
+
+URL: http://localhost:3000/api/showtimes/1
+
+Action: Click Send
+
+Show: { "message": "Showtime deleted" }

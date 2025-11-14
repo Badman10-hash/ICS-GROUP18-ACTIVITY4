@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group 15 — Cinema Showtimes CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="student-details">
+      <p>🎬 Group 15 — Cinema Showtimes CRUD</p>
+    </div>
+
+    <header>
+      <h1>Manage Showtimes 🍿</h1>
+    </header>
+
+    <nav class="nav-links">
+      <a href="tickets.html">← Back to Main Page</a>
+    
+
+    </nav>
+
+    <section class="booking-form">
+      <h2>Add New Showtime</h2>
+      <form id="add-form">
+        <label for="movie_title">Movie Title:</label>
+        <input type="text" id="movie_title" name="movie_title" required>
+        <button type="submit">Add Showtime</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>📅 All Showtimes</h2>
+      <table class="showtimes-table" id="showtimes-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Movie Title</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="showtimes.js"></script>
+</body>
+</html>

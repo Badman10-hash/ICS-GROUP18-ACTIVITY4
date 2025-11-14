@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group 18 — Cinema Showtimes</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="student-details">
+      <p>🎬 Campus Cinema</p>
+    </div>
+
+    <header>
+      <h1>Group 18 — Cinema Showtimes 🍿</h1>
+    </header>
+
+    <div class="marquee-text">
+      <span>🎥 Now Showing — Grab Your Popcorn! 🍿</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="showtimes.html">Cinema Showtimes CRUD</a>
+      <a href="#now-showing">Now Showing</a>
+      <a href="#times">Times</a>
+      <a href="#trailers">Trailers</a>
+      <a href="#tickets">Tickets</a>
+      <a href="https://example.com/tickets" target="_blank">External</a>
+        </nav>
+
+    <section class="movie-slideshow">
+      <div class="slideshow-wrapper">
+        <figure>
+          <img src="HORRORS OF MU.jpg" alt="HORRORS OF MU" class="active">
+          <figcaption>MOUSE OF HORRORS</figcaption>
+        </figure>
+        <figure>
+          <img src="FAMILY GUY.jpg" alt="FAMILY GUY">
+          <figcaption>FAMILY GUY</figcaption>
+        </figure>
+        <figure>
+          <img src="AFTER EVERYTHING.jpg" alt="AFTER EVERYTHING">
+          <figcaption>AFTER EVERYTHING</figcaption>
+        </figure>
+        <figure>
+          <img src="MY FOREVER.jpg" alt="MY FOREVER">
+          <figcaption>FOREVER MY GIRL</figcaption>
+        </figure>
+        <figure>
+          <img src="PROJECT POWER.jpg" alt="PROJECT POWER">
+          <figcaption>PROJECT POWER</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="top-picks">
+      <h2 id="top-picks">Top Picks</h2>
+      <ol>
+        <li>MOUSE OF HORRORS</li>
+        <li>FAMILY GUY</li>
+        <li>AFTER EVERYTHING</li>
+        <li>FOREVER MY GIRL</li>
+        <li>PROJECT POWER</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 id="times">Showtimes</h2>
+      <table class="showtimes-table">
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Start</th>
+            <th>Theater</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>WEAPONS</td><td>12/09/25, 6PM</td><td>NLT</td></tr>
+          <tr><td>THE RUN</td><td>12/10/25, 7PM</td><td>CHM CINEMA</td></tr>
+          <tr><td>MOUSE OF HORRORS</td><td>18/06/26</td><td>GRADUATION SQUARE</td></tr>
+          <tr><td>JOHN THE REEPER</td><td>18/06/26</td><td>G51</td></tr>
+          <tr><td>THE GOOD DOCTOR</td><td>EVERY WEEKEND</td><td>OUTSIDE ICT</td></tr>
+          <tr><td>THE NUN</td><td>18/06/26</td><td>CHICHI'S</td></tr>
+          <tr><td>AFTER EVERYTHING</td><td>18/06/26</td><td>CHALABESA</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="featured-section">
+      <article class="featured-text">
+        <p><strong>🎞️ THE FAM IS REAL</strong></p>
+      </article>
+      <div class="featured-image-slideshow">
+        <img src="LA FAMILIA.jpg" alt="Poster 1" class="active">
+        <img src="poster2.jpg" alt="Poster 2">
+        <img src="poster3.jpg" alt="Poster 3">
+      </div>
+    </section>
+
+    <section class="featured-media">
+      <div class="featured-video">
+        <video width="100%" controls>
+          <source src="soft life.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="featured-audio">
+        <audio controls>
+          <source src="audeo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <section class="booking-form">
+      <h2>🎟️ Book Your Tickets</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+        <label for="datetime">Preferred Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section id="trailers">
+      <h2>🎬 Trailers for Top Picks</h2>
+      <div class="featured-media">
+        <video width="100%" controls>
+          <source src="HORRORS OF MU.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video width="100%" controls>
+          <source src="FAMILY GUY.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video width="100%" controls>
+          <source src="AFTER EVERYTHING.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video width="100%" controls>
+          <source src="MY FOREVER.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video width="100%" controls>
+          <source src="PROJECT POWER.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <footer id="tickets">
+      <p><strong>Property of Group 18 @2025 <a href="#now-showing">Back to Top</a></strong></p>
+    </footer>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+
+ 
+
+
